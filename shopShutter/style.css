@@ -19,7 +19,7 @@ body{
 #dashboard{
     overflow: hidden;
     min-height: 100vh;
-    padding-top: 20vh;
+    padding-top: 5vh;
     background-color: #f1f1f1;
 }
 
