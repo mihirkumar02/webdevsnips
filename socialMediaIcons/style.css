@@ -1,0 +1,66 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    padding: 5vh 10vw;
+    min-height: 100vh;
+    background-color: #181515;
+}
+.iconsholder{
+    margin-top: 30vh;
+    text-align: center;
+}
+.iconsUp, .iconsDown{
+    list-style-type: none;
+}
+.iconsUp li, .iconsDown li{
+    color: #5c5959;
+    font-size: 40px;
+    display: inline;
+    margin: 0 15px;
+}
+
+.Instagram:hover{
+    color: #C13584;
+    cursor: pointer; 
+    transition-duration: 0.5s;
+}
+.Behance:hover{
+    color:  #1769ff;
+    cursor: pointer; 
+    transition-duration: 0.5s;
+}
+.Twitter:hover{
+    color:  #00acee;
+    cursor: pointer; 
+    transition-duration: 0.5s;
+}
+.Dribbble:hover{
+    color:#ea4c89;
+    cursor: pointer; 
+    transition-duration: 0.5s;
+}
+.Linkedin:hover{
+    color: #0e76a8;
+    cursor: pointer; 
+    transition-duration: 0.5s;
+}
+.Facebook:hover{
+    color: #3b5998;
+    cursor: pointer; 
+    transition-duration: 0.5s;
+}
+.Pinterest:hover{
+    color: #E60023;
+    cursor: pointer; 
+    transition-duration: 0.5s;
+}
+.Reddit:hover{
+    color:#FF4500;
+    cursor: pointer; 
+    transition-duration: 0.5s;
+}
+
+
+
