@@ -1,0 +1,83 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    padding: 5vh 10vw;
+    min-height: 100vh;
+    background-color: #e7e7e7;
+}
+.hoverheading{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    margin-top: 30vh;
+    text-align: center;
+}
+.buttonsholder{
+    margin-top: 5vh;
+    text-align: center;
+}
+.morespace{
+    margin-bottom: 40px;
+}
+.button{
+    border: none;
+    font-weight: bold;
+}
+
+.button-press{
+    margin-right: 15px;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: white;
+    background-color: #0e48b4;
+    box-shadow: 0 0 4px 2px black;
+    transition-duration: 1s;
+}
+.button-press:hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.button-rotate{
+    margin-right: 15px;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: white;
+    background-color: #13ad3a;
+    box-shadow: 0 0 2px 1px black;
+    transition-duration: 1s;
+}
+.button-rotate:hover{
+    cursor: pointer;
+    transform: rotateZ(360deg);
+}
+
+.button-fill{
+    margin-right:15px;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border:  3px solid  red;
+    color: red;
+    transition-duration: 1s;
+}
+.button-fill:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.button-round{
+    margin-right: 15px;
+    font-size: 15px;
+    padding: 30px 15px;
+    border-radius: 50%;
+    background-color: #facc00;
+    box-shadow: 0 0 2px 1px grey;
+    transition-duration: 1s;
+}
+.button-round:hover{
+    cursor: pointer;
+}
