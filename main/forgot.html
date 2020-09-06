@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="firebase authentication demo">
+    <meta name="author" content="Mihir Kumar Singh">
+    <link rel="icon" type="image/png" href="./img/favicon.PNG">
+
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Firebase Authentication | Forgot Password</title>
+</head>
+
+<body>
+    <section id="dashboard">
+        <div class="container">
+            <div class="textholder">
+                <div class="text-center">
+                    <div class="formbox">
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="forgotEmail" placeholder="Enter Email.." class="form-control">
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-black btn-lg mt-5" onclick="forgot()">Send Email</button>
+                            </div>
+                            <div class="text-center mt-3">
+                                <h6><a href="./index.html" class="forgot">No, I remember the password</a></h6>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+       
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyARlJHcgMCdXd5ZmqfxT8ZI5CCLWSXjDDU",
+        authDomain: "authentication-bcd53.firebaseapp.com",
+        databaseURL: "https://authentication-bcd53.firebaseio.com",
+        projectId: "authentication-bcd53",
+        storageBucket: "authentication-bcd53.appspot.com",
+        messagingSenderId: "417431254327",
+        appId: "1:417431254327:web:73eab76ed27be85e1796b2"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="./js/auth.js"></script>
+</body>
+</html>

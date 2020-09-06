@@ -1,0 +1,115 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+#welcome{
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.disappear{
+    padding-top: 40vh;
+    background-color: #ff8052;
+    min-height: 100vh;
+}
+
+.svgbox{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.image{
+    width: 100%;
+}
+
+.stay{
+    padding-top: 30vh;
+    min-height: 100vh;
+    background-color: #fff7f1;
+}
+
+.formbox{
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px -2px black;
+    padding: 4vh;
+}
+
+.forgot{
+    color: cornflowerblue;
+}
+
+.forgot:hover{
+    text-decoration: none;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.existing{
+    color: coral;
+}
+
+.existing:hover{
+    text-decoration: none;
+    color: coral;
+    font-weight: bold;
+}
+
+
+#dashboard{
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: coral;
+}
+
+.textholder{
+    margin-top: 30vh;
+}
+
+.white{
+    color: white;
+    font-size: 70px;
+    animation: fadeIn 2s;
+}
+
+.btn-black{
+    background-color: black;
+    box-shadow: 0 0 5px -1px black;
+    transition-duration: 0.3s;
+    color: white;
+}
+
+.btn-black:hover{
+    box-shadow: none;
+    background-color: white;
+    color: black;
+}
+
+
+@media only screen and (max-width: 768px){
+    .disappear{
+        display: none;
+    }
+
+    .formbox{
+        width: 70%;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
