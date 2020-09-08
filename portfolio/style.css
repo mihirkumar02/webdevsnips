@@ -1,0 +1,383 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Saira', sans-serif;
+}
+
+/* SIDENAV */
+.sidenav {
+    text-align: center;
+    height: 100%;
+    position: fixed; 
+    z-index: 1; 
+    width: 0;
+    box-shadow: 1px 0 5px 0 grey;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden; 
+    padding-top: 15vh;
+    transition: 0.5s; 
+} 
+.sidenav a {
+    padding: 2px 8px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+  opacity: 0.5;
+}
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 80px;
+  margin-left: 55px;
+  font-size: 60px;
+}
+.sidenav .close:hover{
+    color: #ff0000;
+}
+
+/* The user picture appears on the sidenav on large screens */
+/* Disappears on smaller screens ( < 969px), and appears in the main section instead */ 
+.myPictureDisappear{
+    width: 50%;
+    margin-bottom: 2vh;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 2px black;
+    transition-duration: 0.5s;
+}
+.myPictureDisappear:hover{
+    box-shadow: none;
+}
+.myPictureAppear{
+    display: none;
+    width: 25%;
+    margin: 0 auto 5vh auto;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 2px black;
+    transition-duration: 0.5s;
+}
+.myPictureAppear:hover{
+    box-shadow: none;
+}
+
+/* Open sidenav with this menu button */
+.hamburger{
+    position: absolute;
+    top: 30px;
+    left: 235px;
+    cursor:pointer;
+    font-size: 35px;
+    transition-duration: 0.5s;
+}
+.hamburger:hover{
+    color: #03ac03;
+}
+
+/* This contains the user name, which shows on top of the screen */
+.siteHeader{
+    text-align: center;
+    box-shadow: 0 2px 2px -1px lightgrey;
+}
+.siteHeader h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    padding-bottom: 3vh;
+}
+
+/* This contains the user name, which shows on top of the screen, in mobile devices */
+.smallerSiteHeader{
+    margin-top: 15vh;
+    box-shadow: 0 2px 2px -1px lightgrey;
+    display: none;
+}
+
+/* user name in smallSiteHeader initially stays invisible for large screens */
+.nameAppear{
+    display: none;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+.nameAppear h1{
+    padding-bottom: 2vh;
+}
+
+
+/* About section styles */
+.headingText{
+    text-align: center;
+}
+.headingText h1{
+    font-size: 2.2em;
+    width: 100%; 
+    border-bottom: 1px solid lightgrey; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+}
+.headingText span{
+    background:#fff; 
+    padding:0 10px; 
+}
+
+/* Common styles for heading text in all sections except about */
+.headingTextOtherSections{
+    text-align: center;
+}
+.headingTextOtherSections h1{
+    font-size: 2.2em;
+    width: 100%; 
+    margin: 10px 0 20px; 
+}
+
+
+/* ========= About Me Section ========= */
+#about{
+    min-height: 70vh;
+    padding: 5vh 10vw;
+    background-color: white;
+}
+.aboutContent{
+    text-align: center;
+    padding-top: 3vh;
+}
+.aboutContent h1{
+    font-family: 'Grandstander', cursive;
+    font-weight: normal;
+}
+
+/* ========= Skills Section ========= */
+
+#skills{
+    min-height: 70vh;
+    padding: 5vh 10vw 2vh 10vw;
+    background: linear-gradient(45deg, #ffd79b, #ffffff);
+}
+.skillsContent{
+    text-align: center;
+    padding-top: 3vh;
+}
+.skillsContent h1{
+    font-family: 'Grandstander', cursive;
+    font-weight: normal;
+}
+.techLogo{
+    width: 10%;
+    margin: 20px;
+}
+
+/* ========= Achievements Section ========= */
+#achievements{
+    min-height: 70vh;
+    padding: 5vh 10vw;
+}
+.achievementsContent{
+    text-align: center;
+    padding-top: 3vh;
+}
+.achievementsContent h1{
+    font-family: 'Grandstander', cursive;
+    font-weight: normal;
+}
+.certificate{
+    width: 20%;
+}
+.certificateLink{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 3px 1px grey;
+    transition-duration: 1s;
+}
+.certificateLink:hover{
+    box-shadow: none;
+}
+
+/* ========= Projects Section ========= */
+#projects{
+    min-height: 70vh;
+    padding: 5vh 10vw;
+    background: linear-gradient(45deg, #ffa16b, #ffffff);
+}
+.projectsContent{
+    text-align: center;
+    padding-top: 3vh;
+}
+.projectsContent h1{
+    font-family: 'Grandstander', cursive;
+    font-weight: normal;
+}
+.project{
+    width: 50%;
+    text-align:center;
+}
+.projectLink{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 3px 1px grey;
+    transition-duration: 1s;
+}
+.projectLink:hover{
+    box-shadow: none;
+}
+
+/* ========= Resume Section ========= */
+#resume{
+    min-height: 70vh;
+    padding: 5vh 10vw;
+}
+.resumeContent{
+    text-align: center;
+    padding-top: 3vh;
+}
+.resumeContent h1{
+    font-family: 'Grandstander', cursive;
+    font-weight: normal;
+}
+
+/* ========= Contact Me Section ========= */
+#contact{
+    min-height: 70vh;
+    padding: 5vh 10vw;
+    background: linear-gradient(45deg, #ffef62, #ffffff);
+}
+.contactContent{
+    text-align: center;
+    padding-top: 3vh;
+}
+.contactContent h1{
+    font-family: 'Grandstander', cursive;
+    font-weight: normal;
+}
+.contactForm{
+    width: 40%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 1px grey;
+    background-color: white;
+}
+.input{
+    margin-bottom: 8px;
+}
+.form-field{
+    font-size: 18px;
+    font-family: 'Grandstander', cursive;
+    border-radius: 10px;
+    padding: 10px 5px;
+    border: none;
+    box-shadow: 0 0 2px 1px black;
+    width: 100%;
+    transition-duration: 1s;
+}
+.form-field:focus{
+    box-shadow: none;
+}
+.submit{
+    background-color: #009b00;
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 40px;
+    width: 30%;
+    font-size: 1.5em;
+    box-shadow: 0 0 3px 1px black;
+    transition-duration: 1s;
+}
+.submit:hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+.icons{
+    margin-top: 2vh;
+}
+.iconsList{
+    list-style-type: none;
+}
+.iconsList li{
+    color: black;
+    font-size: 40px;
+    display: inline;
+}
+.Facebook{
+    margin-right: 15px;
+}
+.Linkedin{
+    margin-left: 15px;
+}
+.Instagram:hover{
+    color: #C13584;
+    cursor: pointer; 
+    transition-duration: 0.5s;
+}
+.Linkedin:hover{
+    color: #0e76a8;
+    cursor: pointer; 
+    transition-duration: 0.5s;
+}
+.Facebook:hover{
+    color: #3b5998;
+    cursor: pointer; 
+    transition-duration: 0.5s;
+}
+
+
+
+
+
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 968px) {
+  /* When we switch to smaller screens, user name on top of the screen disappears */
+  .nameDisappear{
+      display: none;
+   }
+
+   /* In smaller screens, user name becomes visible below the hamburger menu icon */
+   .smallerSiteHeader{
+       display: block;
+   }
+   .nameAppear{
+       display: block;
+   }
+   .sidenav{
+       padding-top: 20vh;
+   }
+  .sidenav a{
+      padding:8px 2px;
+      font-size: 35px;
+   }
+    .myPictureDisappear{
+        display: none;
+    }
+    .myPictureAppear{
+        display: block;
+    }
+    .submit{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:1400px){
+    .techLogo{
+        width: 15%;
+    }
+    .contactForm{
+        width: 50%;
+    }
+}

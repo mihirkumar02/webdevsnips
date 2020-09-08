@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Portfolio Website FrontEnd</title>
+</head>
+<body>
+    <div id="sideNavbar" class="sidenav">
+      <a href="javascript:void(0)" class="close" onclick="closeNavbar()">&times;</a>
+      <img class="myPictureDisappear" src="me.jpg" alt="My picture">
+      <a href="#about" onclick="closeNavbar()">About Me</a>
+      <a href="#skills" onclick="closeNavbar()">Skills</a>
+      <a href="#achievements" onclick="closeNavbar()">Achievements</a>
+      <a href="#projects" onclick="closeNavbar()">Projects</a>
+      <a href="#resume" onclick="closeNavbar()">My Résume</a>
+      <a href="#contact" onclick="closeNavbar()">Contact Me</a>
+    </div>
+
+    <div class="main">
+        <div class="siteHeader">
+            <span class="hamburger" onclick="openNavbar()">&#9776;</span>
+            <div class="nameDisappear">
+                <h1>Web Dev Snips</h1>
+            </div>
+        </div>
+        <div class="smallerSiteHeader">
+            <div class="nameAppear">
+                <h1>Web Dev Snips</h1>
+            </div>
+        </div>
+        
+        <!-- About Me SECTION -->
+        <section id="about">
+            <img class="myPictureAppear" src="me.jpg" alt="My picture">
+            <div class="headingText">
+                <h1><span>ABOUT ME</span></h1>
+            </div>
+            <div class="aboutContent">
+                <h1>Welcome to webdevsnips. This is the first out of many portfolio templates.</h1>
+                <h1>Change anything you like, and anything you don't.</h1> 
+                <h1>Add a custom user name, sections, images and links.</h1>
+            </div>
+        </section>
+
+        <!-- Skills SECTION -->
+        <section id="skills">
+            <div class="headingTextOtherSections">
+                <h1>SKILLS</h1>
+            </div>
+            <div class="skillsContent">
+                <h1>List your skills here</h1>
+                <h1>Add your tech stack, images of the languages used by you.</h1>  
+
+                <div class="logos">
+                    <img class="techLogo" src="./logos/html5.svg" alt="HTML logo">
+                    <img class="techLogo" src="./logos/css-3.svg" alt="CSS logo">
+                    <img class="techLogo" src="./logos/javascript.svg" alt="Javascript logo">
+                </div>
+                <!-- Add more such divs if you want to add more logos -->
+            </div>
+        </section>
+
+        <!-- Achievements SECTION -->
+        <section id="achievements">
+            <div class="headingText">
+                <h1><span>ACHIEVEMENTS</span></h1>
+            </div>
+            <div class="achievementsContent">
+                <h1>Add your certificates and achievements here.</h1>
+                <h1>Give a heading stating the course/achievement name.</h1> 
+                <h1>Add an image of the certificate, and a button to verify the same.</h1>
+                <div class="achievement">
+                    <h4>HTML, CSS and JS for Web Developers</h4>
+                    <p>Coursera</p>
+                    <p>Add an image of certificate below</p>
+                    <img class="certificate" src="./logos/javascript.svg" alt="Add an image of certificate here">
+                    <h4><a class="certificateLink" href="#achievements">Link to certificate</a></h4>
+                </div>
+                <!-- Add more such divs if you want to add more achievements -->
+            </div>
+        </section>
+
+        <!-- Projects SECTION -->
+        <section id="projects">
+            <div class="headingTextOtherSections">
+                <h1>PROJECTS</h1>
+            </div>
+            <div class="projectsContent">
+                <h1>Add your project links here.</h1>
+                <h1>Give a heading stating the project name.</h1> 
+                <h1>Add an image of the project, and a button to view the demo (if any).</h1>
+                <div class="project">
+                    <h4>Social Media Icons</h4> 
+                    <p>Using HTML, CSS</p>
+                    <p>Add an image of project below</p>
+                    <img class="project" src="./smicons.png" alt="Add an image of project here">
+                    <h4><a class="projectLink" target="_blank" href="https://mihirkumar02.github.io/webdevsnips/socialMediaIcons/">Live Demo</a></h4>
+                </div>
+                <!-- Add more such divs if you want to add more projects -->
+            </div>
+        </section>
+
+        <!-- Resume SECTION -->
+        <section id="resume">
+            <div class="headingText">
+                <h1><span>MY RÉSUME</span></h1>
+            </div>
+            <div class="resumeContent">
+                <h1>Add your resume, or link to your resume here.</h1>
+                <h1>A clear picture of the resume will work.</h1> 
+            </div>
+        </section>
+
+        <!-- Contact Me SECTION -->
+        <section id="contact">
+            <div class="headingTextOtherSections">
+                <h1>GET IN TOUCH</h1>
+            </div>
+            <div class="contactContent">
+                <h1>Use this contact form to get in touch with people.</h1>
+                <div class="contactForm">
+                    <form>
+                        <div class="input">
+                            <input class="form-field" type="text" name="name" placeholder="Enter Name.." required>
+                        </div>
+                        <div class="input">
+                            <input class="form-field" type="email" name="email" placeholder="Enter Email ID.." required>
+                        </div>
+                        <div class="input">
+                            <textarea class="form-field" type="text" name="message" rows="3" placeholder="Enter Message.." required></textarea>
+                        </div>
+                        <button class="submit">SEND</button>
+                    </form>
+                </div>
+                <div class="icons">
+                    <ul class="iconsList"> 
+                        <li class="Facebook"><i class="fa fa-facebook"></i></li>
+                        <li class="Instagram"><i class="fa fa-instagram"></i></li>
+                        <li class="Linkedin"><i class="fa fa-linkedin"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./sidenav.js"></script>
+</body>
+</html>
