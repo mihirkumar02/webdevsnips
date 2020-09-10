@@ -93,6 +93,19 @@ body{
     color: black;
 }
 
+.btn-google{
+    border-radius: 15px;
+    box-shadow: 0 0 3px 1px lightgrey;
+    padding: 5px;
+    transition-duration: 0.5s; 
+}
+.btn-google:hover{
+    box-shadow: none;
+}
+
+.googleIcon{
+    width: 80%;
+}
 
 @media only screen and (max-width: 768px){
     .disappear{
