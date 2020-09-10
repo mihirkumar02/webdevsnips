@@ -1,7 +1,7 @@
 ## Firebase Authentication Demo; Part of my webdevsnips Instagram page
 This folder contains code for demonstrating how to perform User Authentication 
   - using Email and Password in Firebase. 
-  - through Google
+  - through Google, in Firebase.
   
 Although it is meant for beginners, experienced devs can use it as a refresher.
 
