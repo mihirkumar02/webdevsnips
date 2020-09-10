@@ -5,6 +5,7 @@
 - Social Media Icons [Demo](https://mihirkumar02.github.io/webdevsnips/socialMediaIcons/)
 - Shop Shutter Effect [Demo](https://mihirkumar02.github.io/webdevsnips/shopShutter/)
 - Portfolio Frontend [Demo](https://mihirkumar02.github.io/webdevsnips/portfolio/)
+- Loading Animations [Demo](https://mihirkumar02.github.io/webdevsnips/loadingAnimations/)
 
 ## Follow me on Instagram
 
