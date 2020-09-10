@@ -1,0 +1,113 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.elements{
+    text-align: center;
+    padding-top: 45vh;
+    color: white;
+    background-color: #000000;
+    height: 55vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition-duration: 100s ease-out;
+}
+.elements span{
+    margin: 0 4px;
+    font-size: 70px;
+    display: inline-block;
+    color: white;
+    animation: pulse 2s infinite ease-in-out;
+}
+.elements span:nth-child(1){
+    animation-delay: 100ms;
+}
+.elements span:nth-child(2){
+    animation-delay: 200ms;
+}
+.elements span:nth-child(3){
+    animation-delay: 300ms;
+}
+.elements span:nth-child(4){
+    animation-delay: 400ms;
+}
+.elements span:nth-child(5){
+    animation-delay: 500ms;
+}
+.elements span:nth-child(6){
+    animation-delay: 600ms;
+}
+.elements span:nth-child(7){
+    animation-delay: 700ms;
+}
+
+
+@keyframes pulse{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-40%);
+        color: #54ff2a;
+        text-shadow:0 0 8px #ffffff;
+    }
+    50%{
+        transform: translateY(0);
+        color: white;
+    }
+}
+
+@keyframes enlarge{
+    0%{
+        transform: scaleY(1);
+    }
+    25%{
+        transform: scaleY(1.5);
+        color: #54ff2a;
+        text-shadow:0 0 8px #ffffff;
+    }
+    50%{
+        transform: scaleY(1);
+        color: white;
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotateY(0deg);
+    }
+    25%{
+        transform: rotateY(180deg);
+        color: #54ff2a;
+        text-shadow:0 0 8px #ffffff;
+    }
+    50%{
+        transform: rotateY(0deg);
+        color: white;
+    }
+}
+
+
+@keyframes spaceOut{
+    0%{
+        margin-right: 5px;
+    }
+    25%{
+        margin-right: 10px;
+        color: #54ff2a;
+        text-shadow:0 0 8px #ffffff;
+    }
+    50%{
+        margin-right: 5px;
+        color: white;
+    }
+}
+
+
+@media screen and (max-width: 568px){
+    .elements span{
+        font-size: 55px;
+    }
+}
