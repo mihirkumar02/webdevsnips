@@ -95,6 +95,7 @@ body{
 
 .btn-google{
     border-radius: 15px;
+    background-color: white;
     box-shadow: 0 0 3px 1px lightgrey;
     padding: 5px;
     transition-duration: 0.5s; 
@@ -105,6 +106,25 @@ body{
 
 .googleIcon{
     width: 80%;
+}
+
+.btn-phone{
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 1px lightgrey;
+    font-size: 30px;
+    padding: 5px 15px;
+    transition-duration: 0.5s; 
+}
+.btn-phone:hover{
+    box-shadow: none;
+}
+
+.bottom-margin{
+    margin-bottom: 10px;
+}
+.top-margin{
+    margin-top: 10px;
 }
 
 @media only screen and (max-width: 768px){
