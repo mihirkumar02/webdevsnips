@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="container">
+        <!-- To-Do List -->
         <div class="text-center">
             <h1>TO-DO LIST</h1>
         </div>
@@ -22,6 +23,7 @@
             <div class="items" id="items"></div>
         </div>  
         
+        <!-- Edit Item form, hidden initially -->
         <div class="edit-container" id="editContainer">
             <div class="text-center">
                 <h3>Update Item</h3>
@@ -32,10 +34,19 @@
             </div>
         </div>  
 
+    <!-- Add your Firebase scripts here 
+                    |||||| 
+                    |||||
+                    ||||
+                    |||
+                    ||
+                 \\ | //
+                  \\ //                
+                   \/    
+    -->
     <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
     <script>
-    // Your web app's Firebase configuration
         var firebaseConfig = {
             apiKey: "AIzaSyC8yUieHdn0UwscAkI0Q5ghTegFefpuMIU",
             authDomain: "webdevsnip.firebaseapp.com",
@@ -48,6 +59,7 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
     </script>
+    <!-- Add custom script(s) below -->
 
     <script src="./operations.js"></script>
 </body>
