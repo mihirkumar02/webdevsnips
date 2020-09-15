@@ -41,18 +41,22 @@ function showItems(){
 function addItemToList(){
     var item = document.getElementById('item').value;
 
-    db.collection('items').add({
-        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-        item: item
-    })
-    .then(() => {
-        location.reload();
-    })
-    .catch((err) => {
-        window.alert(err.message);
-    });
-
-    document.getElementById('item').value = "";
+    if(item == ""){
+        window.alert("Can't add empty item!");
+    } else {
+        db.collection('items').add({
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            item: item
+        })
+        .then(() => {
+            location.reload();
+        })
+        .catch((err) => {
+            window.alert(err.message);
+        });
+    
+        document.getElementById('item').value = "";
+    }
 }
 
 var itemToBeEdited;
@@ -75,16 +79,20 @@ function openEditForm(event){
 function saveEditedItem(){
     var updatedItem = document.getElementById('editedItem').value;
 
-    db.collection('items').doc(itemToBeEdited).update({
-        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-        item: updatedItem
-    })
-    .then(function(){
-        location.reload();
-    })
-    .catch(err => {
-        window.alert(err.message);
-    })
+    if(updatedItem == ""){
+        window.alert("Can't update to empty item!");
+    } else {
+        db.collection('items').doc(itemToBeEdited).update({
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            item: updatedItem
+        })
+        .then(function(){
+            location.reload();
+        })
+        .catch(err => {
+            window.alert(err.message);
+        })
+    }
 }
 
 
