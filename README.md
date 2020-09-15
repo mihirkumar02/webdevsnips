@@ -6,6 +6,7 @@
 - Shop Shutter Effect [Demo](https://mihirkumar02.github.io/webdevsnips/shopShutter/)
 - Portfolio Frontend [Demo](https://mihirkumar02.github.io/webdevsnips/portfolio/)
 - Loading Animations [Demo](https://mihirkumar02.github.io/webdevsnips/loadingAnimations/)
+- Firebase CRUD Operations [Demo](https://mihirkumar02.github.io/webdevsnips/firebaseCRUD/)
 
 ## Follow me on Instagram
 
