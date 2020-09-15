@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Firebase CRUD Todo App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+            <h1>TO-DO LIST</h1>
+        </div>
+        <div class="list-container">
+            <div class="add-items">
+                <input type="text" class="item-field" id="item" placeholder="Enter Item...">
+                <button type="button" onclick="addItemToList()" class="add-btn"><i class="fa fa-plus"></i></button>
+            </div>
+            <hr>
+            <div class="items" id="items"></div>
+        </div>  
+        
+        <div class="edit-container" id="editContainer">
+            <div class="text-center">
+                <h3>Update Item</h3>
+            </div>
+            <div class="edit-items">
+                <input type="text" class="item-field" id="editedItem">
+                <button type="button" onclick="saveEditedItem()" class="add-btn"><i class="fa fa-pencil"></i></button>
+            </div>
+        </div>  
+
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+    <script>
+    // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC8yUieHdn0UwscAkI0Q5ghTegFefpuMIU",
+            authDomain: "webdevsnip.firebaseapp.com",
+            databaseURL: "https://webdevsnip.firebaseio.com",
+            projectId: "webdevsnip",
+            storageBucket: "webdevsnip.appspot.com",
+            messagingSenderId: "768150008983",
+            appId: "1:768150008983:web:6e5c1e1536e9680cc9a5d2"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="./operations.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #ffe550;
+    font-family: 'Arimo', sans-serif;
+}
+.container{
+    padding: 15vh 10vw 0 10vw;
+    min-height: 80vh;
+}
+.list-container{
+    margin: 0 auto;
+    width: 40%;
+    min-height: 15vh;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 1px #000000;
+    background-color: white;
+}
+.add-items{
+    background-color: black;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+.item-field{
+    width: 75%;
+    padding: 10px 5px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.add-btn{
+    padding: 2px;
+    width: 20%;
+    font-size: 16px;
+    background-color: #ffe550;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.add-btn:hover{
+    box-shadow: 0 0 5px 3px #fffaca;
+}
+.items{
+    padding: 0 10px;
+}
+#singleitem{
+    padding-left:20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 3px 1px lightgrey;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+#singleitem:hover{
+    box-shadow: none;
+}
+.buttons{
+    padding-top: 18px;
+}
+.edit-btn{
+    padding: 2px;
+    width: 15%;
+    background-color: white;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    color: #0483cc;
+    margin-right: 30px;
+}
+.edit-btn:hover{
+    opacity: 0.5;
+}
+.delete-btn{
+    padding: 2px;
+    width: 15%;
+    background-color: white;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    color: #f51b1b;
+}
+.delete-btn:hover{
+    opacity: 0.5;
+}
+.edit-container{
+    margin: 20px auto;
+    width: 40%;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: black;
+    display: none;
+}
+.text-center{
+    text-align: center;
+}
+.text-center h3{
+    color: white;
+}
+.edit-items{
+    background-color: black;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1066px){
+    .list-container{
+        width: 80%;
+    }
+    .edit-container{
+        width: 70%;
+    }
+    .item-field{
+        font-size: 20px;
+    }
+}
