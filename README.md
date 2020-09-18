@@ -7,6 +7,7 @@
 - Portfolio Frontend [Demo](https://mihirkumar02.github.io/webdevsnips/portfolio/)
 - Loading Animations [Demo](https://mihirkumar02.github.io/webdevsnips/loadingAnimations/)
 - Firebase CRUD Operations [Demo](https://mihirkumar02.github.io/webdevsnips/firebaseCRUD/)
+- Bike Landing Page [Demo](https://mihirkumar02.github.io/webdevsnips/bikeLandingPage/)
 
 ## Follow me on Instagram
 
