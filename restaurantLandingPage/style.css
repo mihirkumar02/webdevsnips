@@ -91,6 +91,8 @@ section{
 }
 .disappear-explore-btn:hover{
     box-shadow: none;
+    background-color: black;
+    color: white;
 }
 
 .navbar{
