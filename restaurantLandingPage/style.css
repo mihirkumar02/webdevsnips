@@ -1,0 +1,144 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+section{
+    display: flex;
+}
+#landing{
+    height: 100vh;
+    background-image: url("./img1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    animation: changeBg 12s infinite ease-out;
+}
+.blackscreen{
+    position: absolute;
+    background-color: black;
+    padding-top: 5vh;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 95vh;
+    opacity: 0.7;
+}
+.welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #ffffff;
+    width: 50%;
+    height: 80vh;
+    padding-top: 20vh;
+    border-bottom-right-radius: 100%;
+}
+.welcome-text{
+    margin-left: 5vw;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.disappear-welcome{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding-top: 35vh;
+    display: none;
+}
+.disappear-welcome-text{
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px 5px black;
+}
+.btn{
+    border-radius: 0;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+.btn:focus{
+    outline: none;
+}
+.explore{
+    margin-left: 8vw;
+}
+.explore-btn{
+    background-color: black;
+    color: white;
+    padding: 15px 34px;
+    box-shadow: 0px 0px 2px 1px black;
+}
+.explore-btn:hover{
+    color: #ffe862;
+    box-shadow: none;
+}
+.disappear-explore-btn{
+    margin-top: 30px;
+    border-radius: 1px;
+    padding: 15px 20px;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 2px 1px black;
+}
+.disappear-explore-btn:hover{
+    box-shadow: none;
+}
+
+.navbar{
+    margin-left: 57%;
+}
+ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0px;
+}
+.nav-items li{
+    display: inline;
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #ffd900;
+    font-weight: bold;
+    opacity: 1;
+}
+.nav-items li:hover{
+    cursor: pointer;
+    color: white;
+}
+
+@keyframes changeBg{
+    0%{
+        background-image: url("./img1.webp");
+    }
+    33.3%{
+        background-image: url("./img2.webp");
+    }
+    66.6%{
+        background-image: url("./img3.webp");
+    }
+}
+
+@media screen and (max-width: 1224px){
+    .navbar{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .welcome{
+        display: none;
+    }
+    .disappear-welcome{
+        display: block;
+    }
+    .disappear-welcome-text{
+        font-size: 2.5rem;
+    }
+}
