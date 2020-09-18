@@ -12,7 +12,7 @@ section{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
-    animation: changeBg 10s infinite ease-out;
+    animation: changeBg 12s infinite ease-out;
 }
 .welcome-text{
     margin: 10vh 0 0 10vw;
@@ -61,5 +61,8 @@ section{
     .welcome-text{
         margin: 5vh auto 0 auto;
         font-size: 2rem;
+        color: #ffffff;
+        text-shadow: 2px 6px black;
+        letter-spacing: 2px;
     }
 }
