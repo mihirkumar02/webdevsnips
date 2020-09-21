@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Fjalla One', sans-serif;
 }
 ul{
     margin-block-start: 0;
@@ -10,7 +11,7 @@ ul{
 .container{
     padding: 10vh 10vw;
     height: 80vh;
-    background-color: #001d09;
+    background-color: #fafafa;
 }
 .cardsHolder{
     padding-top: 20vh;
@@ -23,53 +24,135 @@ ul{
     text-align: center;
     position: absolute;
     height: 300px;
-    width: 19%;
+    width: 18%;
     background-color: white;
-    border: 2px solid #15a515;
     border-radius: 10px;
     transition-duration: 0.5s;
     cursor: pointer;
 }
 
 .card:not(:last-child):hover{
-    transform: translate(-60px, -40px);
+    transform: translate(-90px, -60px);
 }
 .card:not(:last-child):hover ~ .card:not(:first-child){
-    margin-left: 40px;
+    margin-left: 50px;
 }
-
-.card:first-child:hover{
-    transform: translateX(-140px, -50px);
-}
-
-
 .card:last-child:hover{
-    transform: translateY(-40px);
+    transform: translateY(-60px);
 }
+
 .card:nth-child(1){
     left: 20%;
     z-index: 1;
-    box-shadow: 0px 0px 20px 4px #003a12;
+    box-shadow: 0px 0px 30px 0px #dadada;
 }
 .card:nth-child(2){
     left: 27%;
     z-index: 2;
-    box-shadow: 0px 0px 20px 4px #003a12;
+    box-shadow: 0px 0px 30px 0px #dadada;
 }
 .card:nth-child(3){
     left: 34%;
     z-index: 3;
-    box-shadow: 0px 0px 20px 4px #003a12;
+    box-shadow: 0px 0px 30px 0px #dadada;
 }
 .card:nth-child(4){
     left: 41%;
     z-index: 4;
-    box-shadow: 0px 0px 20px 4px #003a12;
+    box-shadow: 0px 0px 30px 0px #dadada;
 }
 .card:nth-child(5){
     left: 48%;
     z-index: 5;
-    box-shadow: 0px 0px 20px 4px #003a12;
+    box-shadow: 0px 0px 30px 0px #dadada;
+}
+.card:nth-child(6){
+    left: 55%;
+    z-index: 6;
+    box-shadow: 0px 0px 30px 0px #dadada;
 }
 
-@keyframes 
+
+.row{
+    display: flex;
+    height: 100%;
+}
+.col-small{
+    flex: 40%;
+    height: 100%;
+    padding-top: 70px;    
+}
+.col-large{
+    flex: 60%;
+}
+
+.col-small h1{
+    font-size: 60px;
+    color: #3590F3;
+} 
+.col-large h2{
+    margin-top: 50px;
+}
+
+.topmost h1{
+    margin-top: 55px;
+    text-shadow: 0px 2px #cecece;
+    color: #F58A07;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 1254px){
+    .card{
+        width: 22%;
+    }
+}
+@media screen and (max-width: 978px){
+    .card{
+        width: 25%;
+    }
+    .topmost h1{
+        margin-top: 65px;
+        font-size: 40px;
+    }
+}   
+@media screen and (max-width: 798px){
+    .card{ 
+        width: 40%;
+    }
+    .col-small h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 498px){
+    .card{ 
+        width: 45%;
+    }
+    .card:not(:last-child):hover{
+        transform: translate(-40px, -180px);
+    }
+    .card:not(:last-child):hover ~ .card:not(:first-child){
+        margin-left: 20px;
+    }
+    .topmost h1{
+        margin-top: 85px;
+        font-size: 30px;
+    }
+    .col-large h2{
+        font-size: 20px;
+    }
+    .card:nth-child(1){
+        left: 1%;
+    }
+    .card:nth-child(2){
+        left: 11%;
+    }
+    .card:nth-child(3){
+        left: 21%;
+    }
+    .card:nth-child(4){
+        left: 31%;
+    }
+    .card:nth-child(5){
+        left: 41%;
+    }
+}
