@@ -10,6 +10,7 @@
 - Landing Pages
   - Bike Website [Demo](https://mihirkumar02.github.io/webdevsnips/bikeLandingPage/)
   - Restaurant Website [Demo](https://mihirkumar02.github.io/webdevsnips/restaurantLandingPage/)
+  - Travel Website [Demo](https://mihirkumar02.github.io/webdevsnips/travelLandingPage/)
 
 ## Follow me on Instagram
 
