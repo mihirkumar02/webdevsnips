@@ -1,0 +1,75 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0px;
+}
+.container{
+    padding: 10vh 10vw;
+    height: 80vh;
+    background-color: #001d09;
+}
+.cardsHolder{
+    padding-top: 20vh;
+}
+.cards{
+    position: relative;
+    width: 100%;
+}
+.card{
+    text-align: center;
+    position: absolute;
+    height: 300px;
+    width: 19%;
+    background-color: white;
+    border: 2px solid #15a515;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.card:not(:last-child):hover{
+    transform: translate(-60px, -40px);
+}
+.card:not(:last-child):hover ~ .card:not(:first-child){
+    margin-left: 40px;
+}
+
+.card:first-child:hover{
+    transform: translateX(-140px, -50px);
+}
+
+
+.card:last-child:hover{
+    transform: translateY(-40px);
+}
+.card:nth-child(1){
+    left: 20%;
+    z-index: 1;
+    box-shadow: 0px 0px 20px 4px #003a12;
+}
+.card:nth-child(2){
+    left: 27%;
+    z-index: 2;
+    box-shadow: 0px 0px 20px 4px #003a12;
+}
+.card:nth-child(3){
+    left: 34%;
+    z-index: 3;
+    box-shadow: 0px 0px 20px 4px #003a12;
+}
+.card:nth-child(4){
+    left: 41%;
+    z-index: 4;
+    box-shadow: 0px 0px 20px 4px #003a12;
+}
+.card:nth-child(5){
+    left: 48%;
+    z-index: 5;
+    box-shadow: 0px 0px 20px 4px #003a12;
+}
+
+@keyframes 
