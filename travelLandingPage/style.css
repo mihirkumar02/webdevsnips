@@ -1,0 +1,179 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0px;
+}
+#welcome{
+    height: 100vh;
+    background-image: url("./img.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main-text-holder{
+    padding-top: 20vh;
+    display: flex;
+    justify-content: flex-end;
+}
+.main-text{
+    text-align: center;
+    width: 75%;
+}
+
+.main-text h1{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    color: white;
+    font-size: 6rem;
+    animation: appear 1s forwards ease-in, 
+               getTextShadow 1s forwards ease-in, 
+               moveUp 0.8s 2s forwards ease-out;
+}
+
+
+
+.buttons{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: flex-end;
+}
+.button-line{
+    text-align: center;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.button{
+    padding: 16px 32px;
+    opacity: 0;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #e42c42;
+    font-weight: bold;
+    animation: appear 0.5s forwards ease-in;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0px 0px 2px 1px black;
+    border: none;
+}
+
+
+.user-icon{
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    padding: 4px 12px;
+    box-shadow: 0px 0px 3px 1px black;
+    color: white;
+    background-color: black;
+    opacity: 0;
+    animation: appear 0.5s 3s forwards ease-in;
+}
+.button:focus{
+    outline: none;
+}
+.button:hover, .user-icon:hover{
+    box-shadow: none;
+}
+.button:nth-child(1){
+    animation-delay: 3s;
+}
+.button:nth-child(2){
+    animation-delay: 3.3s;
+}
+.button:nth-child(3){
+    animation-delay: 3.6s;
+}
+.button:nth-child(4){
+    animation-delay: 3.9s;
+}
+.button:nth-child(5){
+    animation-delay: 4.2s;
+}
+
+
+
+
+
+@keyframes moveUp{
+    from{
+        transform: translateY(0); 
+        font-size: 6rem;
+    }
+    to{
+        transform: translateY(-100px);
+        font-size: 3.5rem;
+    }
+}
+@keyframes moveUpInMobile{
+    from{
+        transform: translateY(0); 
+    }
+    to{
+        transform: translateY(-150px);
+    }
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes getTextShadow{
+    from{
+        text-shadow: none;
+    }
+    to{
+        text-shadow: 0px 6px black;
+    }
+}
+
+
+
+@media screen and (max-width: 964px){
+    #welcome{
+        background-image: url("./imgphone.webp");
+    }
+    .main-text-holder{
+        padding-top: 25vh;
+        justify-content: center;
+    }
+    .main-text h1{
+        font-size: 2.5rem;
+        animation: appear 1s forwards ease-in, 
+                   getTextShadow 1s forwards ease-in, 
+                   moveUpInMobile 0.8s 2s forwards ease-out;
+    }
+    .buttons{
+        justify-content: center;
+    }
+    .button-line{
+        flex-direction: column;
+        width: 35%;
+    }
+    .button{
+        font-size: 12px;
+        background-color: #000224;
+        box-shadow: 0px 0px 4px -1px white;
+        margin-bottom: 5px;
+    }
+    .user-icon{
+        background-color: white;
+        color: black;
+        top: 140px;
+    }
+}
