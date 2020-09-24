@@ -6,6 +6,7 @@
   - Shop Shutter Effect [Demo](https://mihirkumar02.github.io/webdevsnips/shopShutter/)
   - Loading Animations [Demo](https://mihirkumar02.github.io/webdevsnips/loadingAnimations/)
   - Card Stack [Demo](https://mihirkumar02.github.io/webdevsnips/cardStack/)
+  - CheckBox [Demo](https://mihirkumar02.github.io/webdevsnips/checkbox/)
   
 2. ### FIREBASE TUTORIALS 
   - Firebase Authentication (inside "main" folder) [Demo](https://mihirkumar02.github.io/webdevsnips/main/)
