@@ -1,0 +1,152 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-color: #fafafa;
+    padding: 10vh 10vw;
+    height: 80vh;
+    transition: 0.5s;
+}
+
+
+
+/* Tick Cross */
+.centered-tick-cross{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tick-cross{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    appearance: none;
+    background-color: #ff8484;
+    outline: none;
+    box-shadow: inset 0 0 5px rgba(0,0,0, 0.3);
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.tick-cross:checked{
+    background-color: #cdff81;
+}
+.tick-cross:before{
+    content:'';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background: url("./cancel.png") no-repeat center;
+    background-size: cover;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+.tick-cross:checked:before{
+    background: url("./checked.png") no-repeat center;
+    background-size: cover;
+    left: 40px;
+}
+/* ====================== */
+
+
+
+
+/* Day Night */
+.centered-day-night{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.day-night{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    appearance: none;
+    background-color: #ffd780;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0,0,0, 0.3);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.day-night:checked{
+    background-color: #8a8989;
+}
+.day-night:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: url("./sunny.png") no-repeat center;
+    background-color: #ffdf9b;
+    background-size: 42px 42px;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+.day-night:checked:before{
+    background: url("./moon-phase.png") no-repeat center;
+    background-size: 42px 42px;
+    left: 40px;
+}
+/* ===================== */
+
+
+
+/* Like Dislike */
+.centered-like-dislike{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.like-dislike{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    appearance: none;
+    background-color: #feffb8;
+    outline: none;
+    box-shadow: inset 0 0 5px rgba(0,0,0, 0.3);
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.like-dislike:checked{
+    background-color: #a6d7ff;
+}
+.like-dislike:before{
+    content:'';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background: url("./dislike.png") no-repeat center;
+    background-color: #013f72;
+    background-position-y: 7px;
+    background-position-x: 7px;
+    background-size: 26px 26px;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+.like-dislike:checked:before{
+    background: url("./like.png") no-repeat center;
+    background-color: #013f72;
+    background-size: 32px 32px;
+    background-position-x: 5px;
+    background-position-y: 2px;
+    left: 40px;
+}
