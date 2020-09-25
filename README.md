@@ -7,7 +7,7 @@
   - Loading Animations [Demo](https://mihirkumar02.github.io/webdevsnips/loadingAnimations/)
   - Card Stack [Demo](https://mihirkumar02.github.io/webdevsnips/cardStack/)
   - CheckBox [Demo](https://mihirkumar02.github.io/webdevsnips/checkbox/)
-  - Neon Loader [Demo](https://mihirkumar02.github.io/webdevsnips/neonLoader/)
+  - Neumorphic Todo List [Demo](https://mihirkumar02.github.io/webdevsnips/neumorphicTodoList/)
   
 2. ### FIREBASE TUTORIALS 
   - Firebase Authentication (inside "main" folder) [Demo](https://mihirkumar02.github.io/webdevsnips/main/)
