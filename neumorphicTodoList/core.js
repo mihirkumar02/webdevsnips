@@ -19,6 +19,8 @@ newTask.innerHTML = "<div><h3>" + task + "</h3></div>";
 
         newTask.appendChild(removeButtonHolder);
         tasksHolder.appendChild(newTask);
+
+        document.getElementById('new-task').value = "";
     } else {
         window.alert("Please enter a task..");
     }
