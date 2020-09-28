@@ -1,0 +1,162 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'ABeeZee', sans-serif;
+    overflow: hidden;
+}
+ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0px;
+}
+.container{
+    padding: 10vh 10vw;
+    height: 80vh;
+    background-color: white;
+}
+
+#navbar-button{
+    position: absolute;
+    height: 30px;
+    width: 40px;
+    top: 0;
+    right: 10px;
+    z-index: 2;
+    padding: 22px 20px 8px 20px;
+    cursor: pointer;
+}
+#navbar-button:hover{
+    opacity: 0.8;
+}
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#top{
+    transform: translateY(-4px);
+}
+#bottom{
+    transform: translateY(4px);
+}
+.changeIcon .bar{
+    width: 80%;
+    background-color: #ff5050;
+}
+.changeIcon #top{
+    transform: translateY(4px) 
+               rotateZ(45deg);
+}
+.changeIcon #bottom{
+    transform: translateX(40px) 
+               rotateZ(-180deg);
+    opacity: 0;
+}
+.changeIcon #middle{
+    transform: translateY(-1px) 
+               rotate(-45deg);
+}
+.navbar-items{
+    position: absolute;
+    top: 80px;
+    right: -10px;
+    z-index: 1;
+    padding: 0;
+}
+.navbar-items li{
+    list-style: none;
+    padding: 8px 0;
+    opacity: 0;
+    pointer-events: none;
+}
+.navbar-items li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24px;
+}
+.navbar-items li a:hover{
+    color: orange;
+}
+.navbar-items li i{
+    color: white;
+    font-size: 32px;
+    opacity: 0;
+}
+#home a:hover ~ .fa-home{
+    animation: moveIcon 0.2s 
+               forwards ease;
+}
+#about a:hover ~ .fa-info{
+    animation: moveIcon 0.2s 
+               forwards ease;
+}
+#gallery a:hover ~ .fa-photo{
+    animation: moveIcon 0.2s 
+               forwards ease;
+}
+#contact a:hover ~ .fa-envelope{
+    animation: moveIcon 0.2s 
+               forwards ease;
+}
+.show-navbar-items{
+    display: block;
+}
+
+#navbar-container{
+    position: relative;
+}
+.navbar-background{
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.navbar-background{
+    margin: 30px 20px 20px 0;
+    z-index: 0;
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, #030436, #020138);
+    transition: 0.3s ease;
+}
+.extend-navbar-bg{
+    width: 550px;
+    height: 540px;
+    transform: translate(30%, -20%);
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-items{
+    right: 60px;
+  }
+  .navbar-items li a{
+    font-size: 30px;
+  }
+  .navbar-items li i{
+    font-size: 36px;
+  }
+}
+@keyframes show{
+    from{
+        opacity: 0;
+        pointer-events: none;
+    }
+    to{
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+@keyframes moveIcon{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(20px);
+    }
+}

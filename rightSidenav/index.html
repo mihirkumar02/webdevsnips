@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Side Navigation</title>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar-container">
+            <div id="navbar-button" onclick="navbarControl()">
+                <div class="bar" id="top"></div>
+                <div class="bar" id="middle"></div>
+                <div class="bar" id="bottom"></div>
+            </div>
+            <ul id="navbar-items" class="navbar-items">
+                <li id="home"><a href="#">Home</a><i class="fa fa-home"></i></li>
+                <li id="about"><a href="#">About</a><i class="fa fa-info"></i></li>
+                <li id="gallery"><a href="#">Gallery</a><i class="fa fa-photo"></i></li>
+                <li id="contact"><a href="#">Contact</a><i class="fa fa-envelope"></i></li>
+            </ul>  
+        </div>
+        <div id="navbar-background" class="navbar-background"></div>
+    </div>
+    <script src="./navbar.js"></script>
+</body>
+</html>
