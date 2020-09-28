@@ -8,6 +8,7 @@
   - Card Stack [Demo](https://mihirkumar02.github.io/webdevsnips/cardStack/)
   - CheckBox [Demo](https://mihirkumar02.github.io/webdevsnips/checkbox/)
   - Neumorphic Todo List [Demo](https://mihirkumar02.github.io/webdevsnips/neumorphicTodoList/)
+  - Side Navigation Bar [Demo](https://mihirkumar02.github.io/webdevsnips/rightSidenav/)
   - Background Music [Demo](https://mihirkumar02.github.io/webdevsnips/backgroundMusic/)
   
 2. ### FIREBASE TUTORIALS 
