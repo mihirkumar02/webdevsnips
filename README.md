@@ -8,6 +8,7 @@
   - Card Stack [Demo](https://mihirkumar02.github.io/webdevsnips/cardStack/)
   - CheckBox [Demo](https://mihirkumar02.github.io/webdevsnips/checkbox/)
   - Neumorphic Todo List [Demo](https://mihirkumar02.github.io/webdevsnips/neumorphicTodoList/)
+  - Background Music [Demo](https://mihirkumar02.github.io/webdevsnips/backgroundMusic/)
   
 2. ### FIREBASE TUTORIALS 
   - Firebase Authentication (inside "main" folder) [Demo](https://mihirkumar02.github.io/webdevsnips/main/)
