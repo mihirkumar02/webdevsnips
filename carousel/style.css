@@ -1,0 +1,16 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.main-carousel {
+    background: white;
+    padding-top: 10vh;
+}
+.carousel-cell {
+    width: 28%;
+    height: 500px;
+}
+.carousel-image{
+    border-radius: 10px;
+    width: 50%;
+}
