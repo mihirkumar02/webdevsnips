@@ -1,0 +1,64 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.circles{
+    height:  100vh;
+    background-color: #ebebeb;
+    position: relative;
+}
+.circles span{
+    height: 45px;
+    width: 45px;
+    background-color: #ebebeb;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 2px 2px 5px -1px #b3b3b3, 
+                -2px -2px 5px 0px white;
+    animation: pressed 2s infinite forwards;
+}
+.circles span:first-child{
+    top: 350px;
+    left: 620px;
+}
+.circles span:nth-child(2){
+    top: 300px;
+    left: 645px;
+    animation-delay: 0.125s;
+}
+.circles span:nth-child(3){
+    top: 270px;
+    left: 700px;
+    animation-delay: 0.25s;
+}
+.circles span:nth-child(4){
+    top: 300px;
+    left: 755px;
+    animation-delay: 0.375s;
+}
+.circles span:nth-child(5){
+    top: 350px;
+    left: 780px;
+    animation-delay: 0.5s;
+}
+.circles span:nth-child(6){
+    top: 400px;
+    left: 755px;
+    animation-delay: 0.625s;
+}
+.circles span:nth-child(7){
+    top: 430px;
+    left: 700px;
+    animation-delay: 0.75s;
+}
+.circles span:nth-child(8){
+    top: 400px;
+    left: 645px;
+    animation-delay: 0.875s;
+}
+@keyframes pressed{
+    50%{
+        box-shadow: -2px -2px 5px 0px white inset, 
+                    2px 2px 5px 0px #b3b3b3 inset;
+    }
+}
