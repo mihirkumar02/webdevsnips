@@ -11,6 +11,7 @@
   - Side Navigation Bar [Demo](https://mihirkumar02.github.io/webdevsnips/rightSidenav/)
   - Background Music [Demo](https://mihirkumar02.github.io/webdevsnips/backgroundMusic/)
   - Carousel using Flickity [Demo](https://mihirkumar02.github.io/webdevsnips/carousel/)
+  - Profile Card [Demo](https://mihirkumar02.github.io/webdevsnips/profileCard/)
   - Neumorphic Loader [Demo](https://mihirkumar02.github.io/webdevsnips/neumorphicLoader/)
   
 2. ### FIREBASE TUTORIALS 
