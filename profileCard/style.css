@@ -1,0 +1,159 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Fjalla One', sans-serif;
+}
+.cards-holder{
+    background-color: #fafafa;
+    height: 80vh;
+    padding: 20vh 10vw 0 10vw;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    height: 380px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px 5px #c0c0c0;
+    position: relative;
+    perspective: 1000px;
+}
+.cover{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #010129,#05085e);
+    transition: 0.5s 0.2s ease-in-out;
+    transform-origin: left;
+    transform-style: preserve-3d;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.avatar{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 black;
+}
+.cover-text{
+    margin-top: 40px;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.arrow-holder{
+    margin-top: 30px;
+    padding-right: 10px;
+    text-align: right;
+    backface-visibility: hidden;
+    transition: 0.2s ease-in;
+}
+.arrow{
+    width: 40px;
+}
+.card:hover > .cover{
+        width: 60%;
+        transform: rotateY(-110deg);
+}
+.card:hover > .cover > .arrow-holder > .arrow{
+    transform: rotateZ(180deg);
+}
+.card-content{
+    margin: 20px;
+}
+.inner-photo{
+    width: 100px;
+}
+.inner-avatar{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    text-align: center;
+    width: 200px;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-top: 20px;
+}
+.lower{
+    display: flex;
+    flex-direction: column;
+}
+.desc{
+    margin-top: 20px;
+    font-family: 'Montserrat', cursive;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.contact{
+    margin-top: 40px;
+    text-align: center;
+}
+.contact-btn{
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 220px;
+    padding: 10px 12px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 3px solid #05085e;
+    color: #05085e;
+    transition: 0.5s;
+}
+.contact-btn:hover{
+    color: white;
+    background: #05085e;
+}
+.contact-btn:focus{
+    outline: none;
+}
+
+
+@media screen and (max-width: 528px){
+    .card{
+        width: 220px;
+        height: 278px;
+    }.photo{
+        padding-top: 35px;
+    }.avatar{
+        width: 80px;
+        height: 80px;
+    }.cover-text{
+        margin-top: 50px;
+        font-size: 26px;
+    }.inner-avatar{
+        height: 60px;
+        width: 60px;
+    }.name{
+        font-size: 20px;
+    }.desc{
+        margin-top: 0;
+        font-size: 16px;
+    }.contact{
+        margin-top: 8px;
+    }.contact-btn{
+        font-size: 14px;
+        width: 140px;
+    }.card:hover > .cover{
+        width: 50%;
+    }
+}
