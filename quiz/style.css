@@ -1,0 +1,172 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25vh;
+    background: #f6f6f6;
+}
+.quizbox{
+    position: relative;
+    width: 262px;
+    height: 280px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 0 4px 0 grey;
+}
+.heading{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    z-index: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    color: white;
+    padding-top: 10px;
+    width: 100%;
+    height: 32px;
+    background: #252525;
+    border-radius: 12px 12px 0 0;
+}
+.buttons{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 12px 12px;
+    width: 100%;
+    height: 238px;
+    z-index: 2;
+    background-color: white;
+}
+.buttons-form{
+    padding: 0 12px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+input[type="radio"]{
+    display: none;
+}
+label{
+    position: relative;
+    font-family: 'Roboto', cursive;
+    border: 1.5px solid #d6d6d6;
+    border-radius: 30px;
+    padding: 11px;
+    transition: 0.2s;
+    font-size: 12px;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+label:before{
+    text-align: center;
+    height: 15px;
+    width: 15px;
+    font-size: 12px;
+    border: 1.5px solid black;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+label:hover{
+    background-color: #f8f8f8;
+}
+.A:before{
+    content: "A";
+}
+.B:before{
+    content: "B";
+}
+.C:before{
+    content: "C";
+}
+.D:before{
+    content: "D";
+}
+/* Correct option */
+input[type="radio"]:nth-child(5):checked + label{
+    border: 1.5px solid #59c322;
+    background-color: #59c322;
+    color: white;
+    font-size: 0px;
+}
+input[type="radio"]:nth-child(5):checked + label:before{
+    border: 1.5px solid white;
+    animation: moveRight 0.3s forwards ease-in,
+               scaleUpTick 0.2s 0.3s forwards ease,
+               rotateTick 1.5s forwards;
+}
+/* Incorrect options */
+input[type="radio"]:not(:nth-child(5)):checked + label{
+    border: 1.5px solid #ee4956;
+    background-color: #ee4956;
+    color: white;
+    font-size: 0px;
+}
+input[type="radio"]:not(:nth-child(5)):checked + label:before{
+    border: 1.5px solid white;
+    animation: moveRight 0.3s forwards ease-in,
+               scaleUpCross 0.2s 0.3s forwards ease,
+               rotateCross 1s 0.3s forwards;
+}
+
+@keyframes moveRight{
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 100px;
+    }
+}
+@keyframes scaleUpTick{
+    from{
+        transform: scale(1);
+    }
+    to{
+        content: "";
+        background: url('./tick.png');
+        background-color: white;
+        background-size: 12px 12px;
+        background-repeat: no-repeat;
+        background-position: 1px 1px;
+        box-shadow: 0 0 3px -1px #464646;
+        transform: scale(1.8);
+    }
+}
+@keyframes rotateTick{
+    0%{
+        transform: rotateZ(0deg) scale(1);
+    }
+    90%{
+        transform: rotateZ(360deg) scale(0.5);
+    }
+}
+@keyframes scaleUpCross{
+    from{
+        transform: scale(1);
+    }
+    to{
+        content: "";
+        background: url('./close.png');
+        background-color: white;
+        background-size: 12px 12px;
+        background-repeat: no-repeat;
+        background-position: 1px 1px;
+        box-shadow: 0 0 3px -1px #464646;
+        transform: scale(1.8);
+    }
+}
+@keyframes rotateCross{
+    0%{
+        transform: rotateZ(0deg) scale(1);
+    }
+    50%{
+        transform: rotateZ(360deg) scale(0.5);
+    }
+}
