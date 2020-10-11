@@ -4,17 +4,17 @@ body{
 }
 .circles{
     height:  100vh;
-    background-color: #ebebeb;
+    background-color:#81dfdd;
     position: relative;
 }
 .circles span{
-    height: 45px;
-    width: 45px;
-    background-color: #ebebeb;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     position: absolute;
-    box-shadow: 2px 2px 5px -1px #b3b3b3, 
-                -2px -2px 5px 0px white;
+    background: #81dfdd;
+    box-shadow:  7px 7px 18px #72c4c2, 
+                -7px -7px 18px #90faf8;
     animation: pressed 2s infinite forwards;
 }
 .circles span:first-child{
@@ -58,7 +58,7 @@ body{
 }
 @keyframes pressed{
     50%{
-        box-shadow: -2px -2px 5px 0px white inset, 
-                    2px 2px 5px 0px #b3b3b3 inset;
+        box-shadow: inset 7px 7px 8px #73c6c5, 
+                    inset -7px -7px 8px #8ff8f5;
     }
 }
