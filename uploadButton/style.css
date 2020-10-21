@@ -1,0 +1,105 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe7ba;
+}
+button{
+    position: relative;
+    background: white;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: black;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 12px 45px;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0 0 8px -3px gray;
+}
+.uploadText{
+    margin-right: 20px;
+}
+.fa-upload{
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    z-index: 2;
+}
+.fa-check{
+    position: absolute;
+    z-index: 2;
+    right: 96px;
+    bottom: 15px;
+    color: white;
+    opacity: 0;   
+}
+button:hover{
+    box-shadow: none;
+}
+button::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    border-radius: 40px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(45deg,#1b9210, #86ec79);
+    z-index: 1;
+}
+button:focus{
+    outline: none;
+    box-shadow: none;
+}
+button:focus > .uploadText{
+    animation: disappear 0.2s forwards ease-out; 
+}
+button:focus > .fa-upload{
+    animation: move 0.3s forwards ease,
+               disappear 0.2s 1.8s forwards ease-out;
+}
+button:focus::before{
+    animation: fill 1.5s 0.3s forwards ease-in;
+}
+button:focus > .fa-check{
+    animation: tick 0.8s 1.8s forwards ease-in;
+}
+@keyframes disappear{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes move{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(-68px, 0) scale(1.4);
+        color: white;
+    }
+}
+@keyframes fill{
+    from{
+        width: 25%;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes tick{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
