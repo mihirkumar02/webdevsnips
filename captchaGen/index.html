@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Captcha Generator</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body onload="generateCaptcha()">
+        <h2 id="status">Captcha Generator</h2>
+        <div>
+            <input type="text" readonly id="generated-captcha">
+        </div>
+        <div>
+            <input type="text" id="entered-captcha" placeholder="Enter the Captcha..">
+        </div>
+        <button type="button" onclick="checkCaptcha()">
+            CHECK
+        </button>
+        <button type="button" onclick="generateCaptcha()">
+            REFRESH
+        </button>
+        <script src="./captcha.js"></script>
+    </body>
+</html>
