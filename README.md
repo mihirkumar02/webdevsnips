@@ -15,6 +15,7 @@
   - Quiz Form [Demo](https://mihirkumar02.github.io/webdevsnips/quiz/)
   - Neumorphic Loader [Demo](https://mihirkumar02.github.io/webdevsnips/neumorphicLoader/)
   - Upload Button Animation [Demo](https://mihirkumar02.github.io/webdevsnips/uploadButton/)
+  - Captcha Generator [Demo](https://mihirkumar02.github.io/webdevsnips/captchaGen/)
   
 2. ### FIREBASE TUTORIALS 
   - Firebase Authentication (inside "main" folder) [Demo](https://mihirkumar02.github.io/webdevsnips/main/)
