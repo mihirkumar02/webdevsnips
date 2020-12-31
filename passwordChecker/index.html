@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Password Checker</title>
+</head>
+<body>
+    <form id="signupForm">
+        <div id="text">
+            <h4>Password Strength Checker</h4>
+        </div>
+        <div>
+            <input type="password" id="password" onchange="checkPassword()" placeholder="Enter Password...">
+        </div>
+        <div id="info">
+            <h5>Min. 10 length; Enter atleast 1 uppercase, 1 lowercase, 1 digit & 1 special characters.</h5>
+        </div>
+        <div>
+            <button type="button" id="regBtn">Register</button>
+        </div>
+    </form>
+    <script src="./core.js"></script>
+</body>
+</html>
+

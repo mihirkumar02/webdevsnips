@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#signupForm{
+    border-radius: 5px;
+    width: 18%;
+    padding: 50px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 12px -2px lightgray;
+}
+#text h4{
+    font-family: Georgia;
+    font-weight: 400;
+    color: black;
+}
+#info h5{
+    color: gray;
+    font-weight: 400;
+    font-family: Georgia;
+    margin-inline-end: 0;
+    margin-block-start: 0;
+}
+#password{
+    padding: 8px 10px;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    border: 1px solid black;
+}
+#password:focus{
+    outline: 1.5px solid black;
+}
+#regBtn{
+    border-radius: 2px;
+    padding: 8px 10px;
+    color: white;
+    background-color: #288828;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 0 5px -2px black;
+}
+#regBtn:hover{
+    box-shadow: 0 0 5px -2px lightgray;
+    cursor: pointer;
+}
