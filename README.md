@@ -17,6 +17,7 @@
   - Upload Button Animation [Demo](https://mihirkumar02.github.io/webdevsnips/uploadButton/)
   - Captcha Generator [Demo](https://mihirkumar02.github.io/webdevsnips/captchaGen/)
   - Password Strength Checker [Demo](https://mihirkumar02.github.io/webdevsnips/passwordChecker/)
+  - Tambola Number Generator [Demo](https://mihirkumar02.github.io/webdevsnips/tambolaNumberGenerator/)
   
 2. ### FIREBASE TUTORIALS 
   - Firebase Authentication (inside "main" folder) [Demo](https://mihirkumar02.github.io/webdevsnips/main/)
